@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Додаток</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body class="dark-theme">
+    <div id="main-content">
+        <header>
+            <div class="left-aligned">
+                <div class="theme-switcher">
+                    <span>Light/Dark</span>
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Пошук...">
+            </div>
+            <div class="right-aligned">
+                <div class="auth-buttons">
+                    <button class="auth-btn" id="logout-btn">Вийти</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <aside>
+                <h2>Dashboard</h2>
+                <nav>
+                    <ul>
+                        <li><a href="/to_do/todo.html" class="nav-link active">ToDo</a></li>
+                        <li><a href="/analytics/analytics.html" class="nav-link">Analytics</a></li>
+                        <li><a href="/people-api/people_api.html" class="nav-link">People</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            
+        </main>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

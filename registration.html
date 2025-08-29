@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="./registration.css">
+</head>
+<body class="dark-theme">
+    <div class="form-container">
+        <form id="register-form">
+            <h2>Реєстрація</h2>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <input type="password" id="register-password" placeholder="Пароль" required minlength="6">
+            <button type="submit">Зареєструватися</button>
+            <p>Вже є акаунт? <a href="../login-page/login.html">Увійти</a></p>
+            <p class="error-message" id="register-error-message"></p>
+        </form>
+    </div>
+    <script src="./registration.js"></script>
+</body>
+</html>

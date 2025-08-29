@@ -1,0 +1,95 @@
+:root {
+    --main-bg-color: #0b0c10;
+    --secondary-bg-color: #1a1b21;
+    --text-color: #c5c6c7;
+    --accent-color: #66fcf1;
+    --hover-color: #45a29e;
+    --border-color: #454d5e;
+    --form-bg: #22252a;
+    --form-border: #3b3f46;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 10% 20%, var(--main-bg-color), var(--secondary-bg-color)) no-repeat fixed;
+    color: var(--text-color);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: var(--form-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--form-border);
+}
+
+.form-container h2 {
+    color: var(--accent-color);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--form-border);
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    outline: none;
+    font-size: 16px;
+}
+
+.form-container input:focus {
+    border-color: var(--accent-color);
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    color: var(--secondary-bg-color);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: var(--hover-color);
+}
+
+.form-container p {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.form-container a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #ff6b6b;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}

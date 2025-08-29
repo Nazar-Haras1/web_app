@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логін</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body class="dark-theme">
+    <div class="form-container">
+        <form id="login-form">
+            <h2>Логін</h2>
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Пароль" required>
+            <button type="submit">Увійти</button>
+            <p>Немає акаунта? <a href="../registration/registration.html">Зареєструватися</a></p>
+            <p class="error-message" id="login-error-message"></p>
+        </form>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>

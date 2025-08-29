@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Аналітика Продажів</title>
+    <link rel="stylesheet" href="./analytics.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="/main/index.html" class="nav-link dashboard">Dashboard</a></li>
+                    <li><a href="/to_do/todo.html" class="nav-link">ToDo</a></li>
+                    <li><a href="/people-api/people_api.html" class="nav-link">People</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+
+        <div class="content-container">
+            <header class="main-header">
+                <h1>Аналітика Продажів</h1>
+            </header>
+
+            <div class="dashboard-content">
+                <div class="controls-container">
+                    <div class="control-group">
+                        <label for="view-select">Виберіть вигляд:</label>
+                        <select id="view-select">
+                            <option value="charts">Графіки</option>
+                            <option value="tables">Таблиці</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="report-select">Виберіть звіт:</label>
+                        <select id="report-select"></select>
+                    </div>
+                </div>
+
+                <div id="visualization-container" class="visualization-container">
+                    <canvas id="chartCanvas"></canvas>
+                    <div id="tableContainer" class="table-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./analytics.js"></script>
+    <script src="/main/index.js"></script>
+</body>
+</html>
